@@ -25,7 +25,7 @@ export function initFiltering(elements, indexes) {
             const fieldName = action.getAttribute('data-field');
             const inputField = action.parentElement.querySelector('input');
             inputField.value = '';
-            return data
+            return data;
         }
         // @todo: #4.5 — отфильтровать данные используя компаратор
         return data.filter(row => compare(row, state)); 
