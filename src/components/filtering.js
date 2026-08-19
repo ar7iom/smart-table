@@ -27,6 +27,7 @@ export function initFiltering(elements, indexes) {
             inputField.value = '';
             return data;
         }
+
         // @todo: #4.5 — отфильтровать данные используя компаратор
         return data.filter(row => compare(row, state)); 
     }
